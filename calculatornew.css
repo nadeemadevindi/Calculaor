@@ -1,0 +1,51 @@
+body{
+    display:flex;
+    justify-content:center;
+    margin-top:100px;
+}
+
+.panel{
+    width: 200px;
+    height: 170px;
+    border-radius: 4px;
+    background-color:rgb(66, 61, 61);
+   
+}
+table{
+    margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+button{
+    color:rgb(105, 90, 90);
+    font-size:medium;
+    border-radius:4px;
+    width:100%;
+   background-image:linear-gradient(to top,rgb(202, 197, 197) 20%,rgb(243, 235, 235) 60%);
+   margin-top:5px;
+}
+.big{
+    background-color: rgb(20, 20, 20);
+    width: 250px;
+    height: 300px;
+    border-radius: 4px;
+    margin-top: 15%;
+
+}
+#no1{
+    margin-top:20px;
+    width:38%;
+    border-radius: 4px;
+}
+#no2{
+    width:38%;
+    border-radius: 4px;
+    margin-left:4px;
+}
+#res{
+    width:80%;
+    border-radius: 4px;
+    margin-bottom:20px;
+    margin-top:10px;
+}
