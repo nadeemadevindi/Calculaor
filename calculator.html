@@ -1,0 +1,73 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="calculatornew.css">
+        <title>My calculator</title>
+</head>
+<body>
+        <center>
+        <div class="big">
+                <center>
+                <div class="display">
+                        <input id="no1" type="text" onclick="myfun(this.id)">
+                        <input id="no2" type="text" onclick="myfun(this.id)"><br>
+                        <input id="res" type="text"><!--meka select kranne na obnnet na.+ sign ek ebuwam methanata result ek watena ek witarai wenne-->
+               
+                </div> 
+                </center>
+
+                <center>
+                <div class="panel">
+                       <center>
+                        <table cellpadding="4" cellspacing="4" >
+                        <tr >
+                                <td><button id="7" value="7" onclick="myfun(this.id)">7</button></td>
+                                <td><button id="8" value="8" onclick="myfun(this.id)">8</button></td>
+                                <td><button id="9" value="9" onclick="myfun(this.id)">9</button></td>
+                                <td><button id="p"  onclick="add()">+</button><br></td>
+                                
+                                
+                        </tr>
+                        <tr>
+                                <td><button id="4" value="4" onclick="myfun(this.id)">4</button></td>
+                                <td><button id="5" value="5" onclick="myfun(this.id)">5</button></td>
+                                <td><button id="6" value="6" onclick="myfun(this.id)">6</button></td>
+                                <td><button id="c"  onclick="clr()">c</button></td>        
+                        </tr>
+                        <tr>
+                                <td><button id="1" value="1" onclick="myfun(this.id)">1</button></td>
+                                <td><button id="2" value="2" onclick="myfun(this.id)">2</button></td>
+                                <td><button id="3" value="3" onclick="myfun(this.id)">3</button></td>
+                                <td><button id="M"  onclick="sub()")>-</button></td>
+                        </tr>
+
+                        <tr>
+                                        <td><button id="d" value="."  onclick="myfun(this.id)")>.</button></td>
+                                        <td><button id="0" value="0"  onclick="myfun(this.id)")>0</button></td>
+                                        <td><button id="m"  onclick="multiply()">*</button></td>
+                                        <td><button id="s"  onclick="division()">/</button></td>    
+                                        
+                        
+                        </tr>
+                        
+                        </table>
+                        </center>
+
+                </div>
+                </center>
+               
+        <div>
+        </center>
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="calculator.js"></script>
+</body> 
+
+</html>
