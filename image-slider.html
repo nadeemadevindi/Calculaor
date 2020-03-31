@@ -1,0 +1,54 @@
+<html>
+    <head>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            #pic1, #pic2, #pic3, #pic4{
+                position:absolute;
+                display:none; 
+              
+            }
+
+        </style><!--id tika ekaparam aragena together attributes add krl.hama id ekek front ekem # mark ek wadinn oni and by using commas ew seperate krl gann puluwan-->
+        <!--metehna display:none kyla dala e kynne pictures diaplay krnn eplu.ai e... eka para e pinthura hatahar display krnne nane.ek slide ekek wdyt srin sare watenne oni.
+        eka nis display none dala tynw.ek nis pinthura nikm display wenne na -->
+        <title>Image slider</title>
+    </head>
+
+
+    <body>
+        <div class="container" style="margin-left: 300px">
+            <div id="pic1"><img src="1.jpg" width="50%"></div>
+            <div id="pic2"><img src="2.jpg" width="50%"></div>
+            <div id="pic3"><img src="3.jpg" width="50%"></div>
+            <div id="pic4"><img src="4.jpg" width="50%"></div>
+        </div>
+
+        
+        <script>
+            $(document).ready(//me function ekn kynne document ek gana.web page ek load unt passe meka  athule tyn ek wenn kyli kynne
+                function(){
+
+                    animate();
+
+                    function animate(){//animate kyl function ekak hadagena tynwa
+                        $('#pic4').fadeIn(1500).delay(3500).fadeOut(1500);//$ sign ek use kranne jquery wlt jquery link ekt connect krl tynne.e jquery danme nathi unot $ sign ek undefined kynw.$ kynne jquery kyn ekt
+                        $('#pic3').delay(6500).fadeIn(1500).delay(3500).fadeOut(1500);//jqurery walin harim lesi deyk select krgnn.javascript walin api select kraddi document.getElementById kyla bracket athule id ek call krann oni.et jquery walidi em na
+                        $('#pic2').delay(13000).fadeIn(1500).delay(3500).fadeOut(1500);//jquery walin harim simple widyt id ek select kragnn puluwan issarata # lakuana dala simple bracket athule.
+                        $('#pic1').delay(19500).fadeIn(1500).delay(3500).fadeOut(1500);//# qwwam nirupanaya krnne id ek..aimat jquery walam function ekak tyna fadeIn() kyl-picture ekak thibila ai mathu wela enn,delay()kynne kochchcrak wela eka tynne onida mathuwela awata passeda,fadeOut kynne nathi wela yann kochchra wela onida()
+//warahn athule dala tynne times pramanaya.palaweni ek samapurna wenna 6500k ynw.etkot dewani image ek delay wenn oni palaweni ek sampurna wenkm.etkot dewani ek delay(6500) danna oni.ewagema 3 weni 4 weni pic sampurana welawen delay krann.. 
+                    }//metanata wenakam tibbot ekaparak run wenawa witarai.yata function 1 nathi unot ba...
+                    window.setInterval(function(){//anthima image ekath iwr uanama thami ai meka cl krann oni
+                            animate();
+                    },26000);//hama 26s kata watawkma me pinthura set ekama display krnwa meka danme nathi unoth ek parak slide tika watila nikam innwa.26000 thynne milisecond walin
+                             //methana sampurna animate eka iwarawela window.setInterval kyn function ekn ai animate kyn function ek call krl saha comma ekak dala 26000k dala welawa tyla
+                             //window.setInterval(function(){animate();,26000});
+
+            });//methana me function ekek athule function liyala $(document).ready(meke athule anith function liyala);
+        
+        </script>
+        
+    </body>
+</html>
+<!--mekedi jquery pawichchi krala tynwa mkd javascript waldi id ekek select kragnn hena kradaryk widinn wenwa document.getElementById aran thmi id select kragnn wenne meken harim
+    pahasuwen select krgnn puluwan ona eka jquery use krl >
